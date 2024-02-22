@@ -5,7 +5,7 @@ import time
 from openai import OpenAI
 
 open_api_key=os.getenv["OpenAI_API_TOKEN"]
-os.environ["REPLICATE_API_TOKEN"]="r8_2idkAutIh1jCAVVRIbEDgqt9zNUdbhG2cS1AF"
+os.environ["REPLICATE_API_TOKEN"]="rnd_plOTr8QONVRgGlPSiLrhCKOdRckM"
 model = OpenAI(api_key=open_api_key)
 
 app = Flask(__name__)
@@ -28,7 +28,7 @@ def main():
 
 @app.route("/text_gpt",methods=["GET","POST"])
 def text_gpt():
-    return(render_template("text_gpt.html")
+    return(render_template("text_gpt.html"))
 
 @app.route("/text_result",methods=["GET","POST"])
 def text_result():
